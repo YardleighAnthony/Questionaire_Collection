@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class = "outer">
+        <section class="container">
+            <section class = "row">
+                <section class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
+                    <section class = "panel border bg-white">
+                        <section class="panel-heading">
+                            <h3 class="pt-3 font-weight-bold">Login</h3>
+                        </section>
+                        <section class="panel-body p-3">
+                            <form action="">
+                                <section class="form-group pt-3">
+                                    <section class="input-field">
+                                        <span class="fa fa-user p-2 ml-2"></span>
+                                            <input type="text" placeholder = "Username">
+                                    </section>
+                                </section>
+
+
+                                 <section class="form-group pt-3">
+                                    <section class="input-field">
+                                        <span class="fa fa-lock p-2"></span>
+                                            <input [type] = "type" placeholder = "Password">
+                                            <span (click)= "hideShowPass()" class= "fa {{eyeIcon}}"></span>
+                                    </section>
+                                </section>
+                                <section class="form-inline fr mt-4">
+                                    <a id = "forget" class = "font-weight-bold">Forget Password?</a>
+                                </section>
+                                <button type = "submit" class = "btn btn-primary btn-block mt-4 w-100">Login</button>
+                                
+                                <section class="text-center pt-4 text-muted">Don't have an account? <a id="forget" routerLink="/signup">Register</a></section>
+                            </form>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+</body>
+</html>
